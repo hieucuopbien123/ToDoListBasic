@@ -1,0 +1,47 @@
+.buttonLeft {
+    background-color: #00BCD4;
+    color: white;
+    padding: 5px;
+    border: 0;
+    border-radius: 5px;
+    width: 45%;
+    transition-duration: 0.4s;
+}
+
+.buttonRight {
+    background-color: #D9534F;
+    color: white;
+    padding: 7px;
+    border: 0;
+    border-radius: 5px;
+    width: 45%;
+    transition-duration: 0.4s;
+}
+
+.buttonLeft:hover {
+    background-color: #017483;
+}
+
+.buttonRight:hover {
+    background-color: rgb(165, 6, 6);
+}
+
+.pairButtonWrapper {
+    min-width: 40%; 
+    display: flex; 
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .pairButtonWrapper {
+        width: 60%;
+        flex-direction: column;
+    }
+    .buttonRight {
+        width: 100%;
+    }
+    .buttonLeft {
+        width: 100%;
+    }
+}
